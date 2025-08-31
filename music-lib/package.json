@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite --port 5001 --strictPort",
+    "dev": "vite --port 5001",
     "build": "concurrently \"vite build --watch\" \"vite preview --port 5001 --strictPort\"",
     "lint": "eslint .",
     "preview": "vite preview"
