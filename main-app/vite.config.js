@@ -8,7 +8,7 @@ export default defineConfig({
     federation({
       name: 'app',
       remotes: {
-        remoteApp: 'https://delicate-melba-96ba47.netlify.app/assets/remoteEntry.js',
+        remoteApp: 'remoteEntry.js',
       },
       shared: ['react', 'react-dom'],
     }),
