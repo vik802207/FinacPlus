@@ -8,7 +8,7 @@ export default defineConfig({
     federation({
       name: 'app',
       remotes: {
-        remoteApp: 'https://music-lib123.netlify.app/assets/remoteEntry.js',
+        remoteApp: 'https://super-arithmetic-3011eb.netlify.app/assets/remoteEntry.js',
       },
       shared: ['react', 'react-dom'],
     }),
