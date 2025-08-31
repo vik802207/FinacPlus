@@ -8,11 +8,20 @@ export default defineConfig({
     federation({
       name: 'app',
       remotes: {
-        remoteApp: 'https://super-arithmetic-3011eb.netlify.app/assets/remoteEntry.js',
+        remoteApp: 'https://delicate-melba-96ba47.netlify.app/assets/remoteEntry.js',
       },
       shared: ['react', 'react-dom'],
     }),
   ],
+   server: {
+    port: 5001,
+    cors: true, // ✅ enables CORS
+    headers: {
+      "Access-Control-Allow-Origin": "*",  // ✅ allow all origins
+      "Access-Control-Allow-Methods": "GET,OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    },
+  },
   build: {
     modulePreload: false,
     target: 'esnext',
