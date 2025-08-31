@@ -1,0 +1,39 @@
+/* ---------- Login Container ---------- */
+.login-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #f1f1f1;
+}
+
+/* ---------- Buttons ---------- */
+.login-box button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-box button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Different role styles */
+.login-box button:nth-child(1) {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5); /* user */
+}
+
+.login-box button:nth-child(2) {
+  background: linear-gradient(135deg, #ff6a00, #ee0979); /* admin */
+}
+
+.login-box button:nth-child(3) {
+  background: linear-gradient(135deg, #ff4d4d, #e63e3e); /* logout */
+}
